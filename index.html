@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <a href="#" class="logo">Jungle</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">Contact</a></li>
+            
+        </ul>
+    </header>
+    <section>
+        <h2 id="text"><span>It's time for a new</span><br>Adventure</h2>
+        <img src="bird1.png" id="bird1">
+        <img src="bird2.png" id="bird2">
+        <img src="forest.png" id="forest">
+        <a href="#" id="btn">Explore</a>
+
+        <img src="rocks.png" id="rocks">
+        <img src="water.png" id="water">
+    </section>
+    <div class="sec">
+        <h2>Parallax Scroll</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt minus, cum soluta molestias quos repellendus veritatis porro consectetur deserunt fugit quidem eius libero, possimus explicabo! Repellat quisquam architecto possimus! Maxime, qui voluptatem dolor labore accusamus laudantium fugit. Fuga adipisci expedita qui modi animi exercitationem magni reprehenderit obcaecati id! Excepturi exercitationem tenetur fugiat possimus error animi veniam adipisci et laboriosam, corporis ex delectus ut repellat aperiam blanditiis vero voluptate perferendis repudiandae nemo doloremque ratione deleniti officiis molestias itaque. Deserunt earum vitae quis obcaecati eaque doloremque deleniti cupiditate quia non officiis! Quidem repellendus veritatis modi nobis similique saepe ut aperiam, fuga quaerat provident, itaque impedit quasi alias asperiores eligendi sed, eveniet perferendis quo suscipit voluptas laborum pariatur in facilis <br><br>libero? Voluptas odit esse, deserunt voluptate totam quaerat iste sed ducimus facilis excepturi molestias porro tempora, omnis ea vero, eveniet nostrum consectetur quo qui eos. Ducimus repellat, qui asperiores aut aspernatur rem velit atque quos quibusdam ullam cupiditate assumenda accusamus temporibus soluta quis iusto vel illum voluptatum saepe fugit quidem molestiae molestias amet alias? Dignissimos quibusdam labore tenetur corporis amet facilis, error, debitis rem perspiciatis aspernatur architecto dolorum perferendis officiis quidem est ad, quaerat ea obcaecati iste quam illum qui harum. Quia repudiandae perspiciatis dolorum accusamus cupiditate et suscipit iusto laudantium quos fugit expedita eius molestias quidem, illo maiores dolorem! Quidem eligendi fugiat reiciendis quae, culpa voluptates officiis quis fugit ea aperiam inventore unde voluptatum itaque quibusdam vero voluptas quod? Dignissimos illo odio ipsum suscipit rerum consectetur explicabo quasi, reiciendis illum porro pariatur et consequuntur? Dignissimos mollitia optio sint minima error dolor hic dicta sed similique natus eum dolore aspernatur, quod sunt possimus? Unde soluta consequatur adipisci ratione libero labore, esse doloremque ea quam praesentium. Cupiditate, rem voluptate nihil, consectetur ex ut delectus dolorum ratione nam aut odit dignissimos natus. <br><br>Est nisi, iure ad voluptas quam nemo, nihil molestias eos suscipit impedit ab fugiat corporis. Laboriosam vel labore recusandae nemo nostrum facere obcaecati corrupti, distinctio, impedit, tempora quaerat? Quasi, odio repellat dolorem earum labore laborum maxime suscipit quo accusantium obcaecati blanditiis minima, debitis, tenetur ipsa amet? Perferendis eaque incidunt harum similique magnam voluptatibus aspernatur adipisci. Vel id quia velit consequuntur saepe ducimus suscipit ea illum fugiat distinctio sunt nostrum rem fuga architecto ipsum tempore, dolorum omnis laudantium molestias aliquid, est numquam.
+            <br><br> Odit quae veritatis, numquam vel nam vero autem, asperiores iure rem nemo, soluta aliquid molestias? Asperiores veniam dolorem repellat error praesentium sequi reprehenderit iusto modi, incidunt qui reiciendis. Voluptatem ducimus, dolore ut minus repellat magnam ab eum. Ipsam incidunt maxime animi unde illo laboriosam distinctio inventore cum quis quod. Asperiores impedit fugit quo eveniet neque nobis laudantium atque iste excepturi quaerat enim sapiente maxime quia totam iusto aliquam quas sint magnam rem, recusandae delectus vero ducimus? Ipsa similique veniam impedit molestiae dolor doloremque dolorem alias temporibus consectetur quas, dolores eius nisi quos? Impedit, aut atque optio nesciunt ipsam, odio deserunt odit illum, iste dolorem ea. Ratione asperiores atque ipsum consequatur, autem quia, a ipsa aut ut illo nostrum aliquid perspiciatis quibusdam. Tenetur!
+
+        </p>
+    </div>
+
+    <script>
+        let text = document.getElementById('text');
+        let bird1 = document.getElementById('bird1');
+        let bird2 = document.getElementById('bird2');
+        let btn = document.getElementById('btn');
+        let rocks = document.getElementById('rocks');
+        let forest = document.getElementById('forest');
+        let water = document.getElementById('water');
+        let header = document.getElementById('header');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+
+            text.style.top = 50 + value * -0.5 + '%';
+            bird1.style.top = value * -1.5 + 'px';
+            bird1.style.left = value * 2 + 'px';
+            bird2.style.top = value * -1.5 + 'px';
+            bird2.style.left= value * -5 + 'px';
+            btn.style.marginTop= value * 1.5 +'px';
+            rocks.style.top = value * -0.12 + 'px';
+            forest.style.top = value * 0.25 + 'px';
+            header.style.top =  value * 0.5 + 'px';
+        })
+    </script>
+</body>
+</html>
+  
